@@ -10,7 +10,7 @@ public class DecoratorPattern {
     public static void main(String[] args) {
         Computer computer = new Computer();
         computer = new Disk(computer); 
-// vì disk là con của extends Computer mà ComponentDecorator là con của computer
+// vì disk là con của ComponentDecorator mà ComponentDecorator là con của computer
         computer = new Monitor(computer);
         computer = new CD(computer);
         
